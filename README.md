@@ -16,9 +16,3 @@ This fun little webpage randomly combines players, places, and football drama to
 - `index.html` – The full webpage with logic included
 - No external dependencies
 
-## 💡 How to Use
-
-1. Clone or download the repository:
-   ```bash
-   git clone https://github.com/your-username/manutd-conspiracy-generator.git
-   cd manutd-conspiracy-generator
