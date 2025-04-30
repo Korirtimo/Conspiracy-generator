@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conspiracy Generator</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #0f0f23;
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      color: #00ffcc;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background: #00ffcc;
+      border: none;
+      color: #000;
+      cursor: pointer;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .conspiracy {
+      margin-top: 40px;
+      font-size: 24px;
+      color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔮 Random Conspiracy Generator 🔮</h1>
+  <button onclick="generateConspiracy()">Reveal the Truth</button>
+  <div class="conspiracy" id="output"></div>
+
+  <script>
+    const subjects = [
+      "Manchester United fans",
+      "Old Trafford's grass",
+      "Bruno Fernandes",
+      "Sir Alex Ferguson",
+      "VAR officials",
+      "The Sir Jim Ratcliffe",
+      "Liverpool supporters",
+      "The team bus",
+      "Hojlund's boots"
+    ];
+  
+    const verbs = [
+      "are involved in a secret experiment",
+      "have been brainwashed by aliens",
+      "hide coded messages in press conferences",
+      "are working with secret agents",
+      "manipulate match outcomes telepathically",
+      "control Premier League decisions",
+      "communicate with refs using corner flags"
+    ];
+  
+    const extras = [
+      "to bring back Sir Alex's ghost tactics",
+      "so they can win the league using time travel",
+      "to avoid signing a proper striker",
+      "to make Liverpool jealous",
+      "because Maguire told them to in a dream",
+      "to cover up the real reason De Gea left",
+      "to hide the true identity of Onana"
+    ];
+  
+    function getRandom(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
+  
+    function generateConspiracy() {
+      const sentence = `${getRandom(subjects)} ${getRandom(verbs)} ${getRandom(extras)}.`;
+      document.getElementById("output").innerText = sentence;
+    }
+  </script>
+  
+</body>
+</html>
